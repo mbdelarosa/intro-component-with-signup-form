@@ -12,6 +12,7 @@
   --dark-blue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
   --gray-border: hsl(0, 0%, 85%);
+  --gray-border-focus: hsl(0, 0%, 60%);
 }
 
 body {
@@ -29,7 +30,7 @@ body {
 }
 
 .container {
-  margin: 5rem 1.5rem;
+  margin: 6rem 1.5rem;
 }
 
 .container__title {
@@ -39,8 +40,8 @@ body {
   font-weight: 700;
 }
 
-.container__text {
-  margin-bottom: 3rem;
+.container__body {
+  margin-bottom: 4rem;
   font-weight: 400;
 }
 
@@ -93,6 +94,11 @@ body {
   color: var(--dark-blue);
 }
 
+.signup-form__input:focus {
+  outline: none;
+  border-color: var(--gray-border-focus);   
+}
+
 .signup-form__button {
   background-color: var(--green);
   border-radius: 0.25rem;
@@ -116,4 +122,41 @@ body {
 .accent--terms {
   font-weight: 700;
   color: var(--red);
+}
+
+@media only screen and (min-width: 80rem) {
+  .container {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    gap: 1.5rem;
+  }
+
+  .container__text {
+    grid-column: 2;
+    max-width: 35rem;
+    padding-top: 5rem;
+    text-align: left;
+    align-self: center;
+  }
+  
+  .container__title {
+    font-size: 3.05rem;
+    line-height: 1.15;
+  }
+
+  .container__cards {
+    grid-column: 3;
+  }
+
+  .signup-card {
+    padding: 2rem;
+  }
+
+  .signup-form {
+    gap: 0.75rem;
+  }
+
+  .signup-form__input {
+    padding: 1rem 2rem;
+  }
 }
