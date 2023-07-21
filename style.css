@@ -1,0 +1,119 @@
+:root {
+  /* Primary */
+  --red: hsl(0, 100%, 74%);
+  --red-shadow: hsla(0, 50%, 53%, 0.5);
+  --green: hsl(154, 59%, 51%);
+  --green-shadow: hsl(154, 59%, 43%);
+
+  /* Accent */
+  --blue: hsl(248, 32%, 49%);
+
+  /* Neutral */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  --gray-border: hsl(0, 0%, 85%);
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--red);
+  background-image: url('./images/bg-intro-mobile.png');
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+
+.container {
+  margin: 5rem 1.5rem;
+}
+
+.container__title {
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.container__text {
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.try-card {
+  background-color: var(--blue);
+  padding: 1.25rem 4rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 0 0 var(--red-shadow);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.accent--try {
+  font-weight: 700;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.signup-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 0 0 var(--red-shadow);
+  color: var(--dark-blue);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.signup-form__input {
+  border: 1px solid var(--gray-border);
+  border-radius: 0.25rem;
+  padding: 1rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.signup-form__button {
+  background-color: var(--green);
+  border-radius: 0.25rem;
+  padding: 1rem 2rem;
+  border: none;
+  box-shadow: 0 4px 0 0 var(--green-shadow);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: white;
+}
+
+.signup-card__note {
+  padding: 0 1rem;
+  font-size: 0.725rem;
+  line-height: 1.75;
+  color: var(--grayish-blue);
+}
+
+.accent--terms {
+  font-weight: 700;
+  color: var(--red);
+}
