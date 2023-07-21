@@ -34,24 +34,36 @@
           <form id="form" method="post" novalidate>
             <div class="signup-form">
               <!-- First Name -->
-              <label for="first-name" class="sr-only">First Name</label>
-              <input type="text" id="first-name" name="first-name" autocomplete="given-name" placeholder="First Name" class="signup-form__input" aria-invalid="false" aria-describedby="fname-error" required />
-              <span id="fname-error" class="signup-form__error" aria-live="polite"></span>
+              <div class="input-container">
+                <label for="first-name" class="sr-only">First Name</label>
+                <input type="text" id="first-name" name="first-name" autocomplete="given-name" placeholder="First Name" class="signup-form__input" aria-invalid="true" aria-describedby="fname-error" required />
+                <span id="fname-error" class="signup-form__error" aria-live="polite"></span>
+                <span class="error-icon"><img src="images/icon-error.svg" alt=""></span>
+              </div>
 
               <!-- Last Name -->
-              <label for="last-name" class="sr-only">Last Name</label>
-              <input type="text" id="last-name" name="last-name" autocomplete="family-name" placeholder="Last Name" class="signup-form__input" aria-invalid="false" aria-describedby="lname-error" required />
-              <span id="lname-error" class="signup-form__error" aria-live="polite"></span>
+              <div class="input-container">
+                <label for="last-name" class="sr-only">Last Name</label>
+                <input type="text" id="last-name" name="last-name" autocomplete="family-name" placeholder="Last Name" class="signup-form__input" aria-invalid="true" aria-describedby="lname-error" required />
+                <span id="lname-error" class="signup-form__error" aria-live="polite"></span>
+                <span class="error-icon"><img src="images/icon-error.svg" alt=""></span>
+              </div>
 
               <!-- Email -->
-              <label for="email" class="sr-only">Email Address</label>
-              <input type="email" id="email" name="email" autocomplete="email" placeholder="Email Address" class="signup-form__input" aria-invalid="false" aria-describedby="email-error" required />
-              <span id="email-error" class="signup-form__error" aria-live="polite"></span>
+              <div class="input-container">
+                <label for="email" class="sr-only">Email Address</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="Email Address" class="signup-form__input error-input" aria-invalid="true" aria-describedby="email-error" required />
+                <span id="email-error" class="signup-form__error" aria-live="polite">Looks like this is not an email</span>
+                <span class="error-icon"><img src="images/icon-error.svg" alt=""></span>
+              </div>
 
               <!-- Password -->
-              <label for="new-password" class="sr-only">Password</label>
-              <input type="password" id="new-password" name="password" autocomplete="new-password" placeholder="Password" class="signup-form__input" aria-invalid="false" aria-describedby="password-error" required />
-              <span id="password-error" class="signup-form__error" aria-live="polite"></span>
+              <div class="input-container">
+                <label for="new-password" class="sr-only">Password</label>
+                <input type="password" id="new-password" name="password" autocomplete="new-password" placeholder="Password" class="signup-form__input" aria-invalid="true" aria-describedby="password-error" required />
+                <span id="password-error" class="signup-form__error" aria-live="polite"></span>
+                <span class="error-icon"><img src="images/icon-error.svg" alt=""></span>
+              </div>
 
               <!-- Button -->
               <button type="submit" class="signup-form__button">Claim your free trial</button>
