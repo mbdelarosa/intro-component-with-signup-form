@@ -74,16 +74,19 @@
               </div>
 
               <!-- Button -->
-              <button type="submit" class="signup-form__button">Claim your free trial</button>
+              <button type="submit" class="signup-form__button" aria-describedby="signup-terms">Claim your free trial</button>
+
+              <!-- Terms -->
+              <p id="signup-terms" class="signup-card__note">
+                By clicking the button, you are agreeing to our <a href="#" class="signup-card__terms">Terms and Services</a>
+              </p>
             </div>
           </form>
-
-          <p class="signup-card__note">
-            By clicking the button, you are agreeing to our <span class="accent--terms">Terms and Services</span>
-          </p>
         </div>
       </div>
     </div>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
